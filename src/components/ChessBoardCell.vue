@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, type Ref } from "vue";
+import { computed } from "vue";
 
 const props = defineProps<{
   rank: number;
@@ -12,11 +12,7 @@ defineExpose({ name });
 </script>
 
 <template>
-  <div
-    class="cell"
-    :title="name"
-    data-test="cell"
-  ></div>
+  <div class="cell" :title="name" data-test="cell"></div>
 </template>
 
 <style scoped>

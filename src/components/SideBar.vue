@@ -26,4 +26,14 @@ const props = defineProps<{
 h1 {
   margin-bottom: 1rem;
 }
+
+ol {
+  column-count: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  ol {
+    column-count: 3;
+  }
+}
 </style>

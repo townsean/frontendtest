@@ -18,7 +18,7 @@ export default [
     ...compat.extends("@vue/eslint-config-prettier/skip-formatting"),
     {
         files: ["**/*.vue", "**/*.js", "**/*.jsx", "**/*.cjs", "**/*.mjs", "**/*.ts", "**/*.tsx", "**/*.cts", "**/*.mts"],
-        ignores: ['.gitignore'],
+        ignores: ['.gitignore', 'dist'],
         languageOptions: {
           ecmaVersion: "latest",
         },
