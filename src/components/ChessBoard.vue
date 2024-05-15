@@ -30,6 +30,7 @@ const files: Ref<string[]> = ref(["a", "b", "c", "d", "e", "f", "g", "h"]);
 .chessboard {
   background: var(--green1);
   border-collapse: collapse;
+  touch-action: manipulation;
 
   td {
     border: 1px solid var(--green4);
