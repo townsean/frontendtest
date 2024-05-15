@@ -6,23 +6,15 @@ const props = defineProps<{
   file: string;
 }>();
 
-const isActive: Ref<boolean> = ref(false);
-
 const name = computed(() => `${props.file}${props.rank}`);
 
-const onCellClicked = () => {
-  isActive.value = true;
-};
-
-defineExpose({ name, isActive });
+defineExpose({ name });
 </script>
 
 <template>
   <div
     class="cell"
-    :class="{ 'cell--active': isActive }"
     :title="name"
-    @click="onCellClicked"
     data-test="cell"
   ></div>
 </template>
@@ -32,9 +24,9 @@ defineExpose({ name, isActive });
   height: 10vmin;
   width: 10vmin;
   cursor: pointer;
-}
 
-.cell--active {
-  background-color: var(--green3);
+  &:active {
+    background-color: var(--green3);
+  }
 }
 </style>

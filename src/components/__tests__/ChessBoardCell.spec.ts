@@ -8,13 +8,4 @@ describe("ChessBoardCell", () => {
     const wrapper = mount(ChessBoardCell, { props: { rank: 2, file: "a" } });
     expect(wrapper.vm.name).toEqual("a2");
   });
-
-  it("isActive is true after cell click event"),
-    async () => {
-      const wrapper = mount(ChessBoardCell, { props: { rank: 2, file: "a" } });
-
-      expect(wrapper.vm.isActive).toBeFalsy();
-      await wrapper.get('[data-test="cell"]').trigger("click");
-      expect(wrapper.vm.isActive).toBeTruthy();
-    };
 });
