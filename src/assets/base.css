@@ -1,0 +1,29 @@
+:root {
+  /* colorhunt.co palette: https://colorhunt.co/palette/cde8e5eef7ff7ab2b24d869c */
+  --green1: #eef7ff;
+  --green2: #cde8e5;
+  --green3: #7ab2b2;
+  --green4: #4d869c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.text-aligned--centered {
+  text-align: center;
+}
